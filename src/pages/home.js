@@ -5,6 +5,7 @@ import Language from "../module/language"
 import Qualification from "../module/qualifications"
 import Exp from "../module/exp"
 import Course from "../module/course"
+import Project from "./project"
 
 export default function Home()
 {

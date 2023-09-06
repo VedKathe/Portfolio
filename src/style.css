@@ -513,6 +513,15 @@ body{
     background-image: url(../src/pages/temp.jpg);
 }
 
+.file_img{
+    width: 160px;
+    height: auto;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .qual_cont{
     background-color: rgb(0, 0, 0);
     display: grid;
@@ -577,7 +586,7 @@ body{
 
 .child_right{
   
-  width: 50%;
+  width: auto;
   height: auto;
   background-color: aqua;
   

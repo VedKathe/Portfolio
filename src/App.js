@@ -6,18 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   // let current = <Home/>
-  switch (window.location.pathname) {
-    case "/pages/project.js":
-      // current = <Project/>
-      break;
-
-      case "/":
-      // current = <Home/>
-      break;
-      
-    default:
-      break;
-  }
   return (
     <>
       <Router>
