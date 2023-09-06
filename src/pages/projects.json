@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Evergreen",
+    "description": "A platform to sell/exchange plants",
+    "techIcons": ["SiHtml5", "SiCss3", "SiJavascript", "SiPhp", "SiMysql", "SiReact"],
+    "imageName": "evergreen"
+  },
+  {
+    "title": "Anibase",
+    "description": "fully working API implementation of MAL API (myanimelist)",
+    "techIcons": ["SiHtml5", "SiCss3", "SiJavascript", "SiPhp", "SiMysql"],
+    "imageName": "anibase"
+  },
+  {
+    "title": "AQD (Anime Quote Dispenser)",
+    "description": "An Anime quote dispenser (random) Image, Character, Quote, Anime name",
+    "techIcons": ["SiHtml5", "SiCss3", "SiJavascript", "SiPhp", "SiMongodb"],
+    "imageName": "aqd"
+  },
+  {
+    "title": "Inspirus 6 (2022)",
+    "description": "Contributed towards the development of the webpage for a Department event",
+    "techIcons": ["SiHtml5", "SiCss3", "SiJavascript"],
+    "imageName": "inspirus6"
+  }
+]
