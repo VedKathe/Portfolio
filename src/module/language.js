@@ -10,8 +10,10 @@ import python from "../pages/temp.jpg" // Import the 'python' image
 import java from "../pages/temp.jpg" // Import the 'java' image
 import c from "../pages/temp.jpg"
 
-export default function Language()
+export default function Language(props)
+
 {
+    const {lang} = props
     return(
         <>
         <div className="contact_cont">

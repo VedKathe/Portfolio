@@ -1,17 +1,26 @@
 import React from 'react';
 import * as ReactIcons from 'react-icons/si';
-import img from ".././temp.jpg"
+import * as ReactIcons2 from 'react-icons/fa'
+console.log(typeof(ReactIcons)+" this")
+ReactIcons = Object.assign(ReactIcons,ReactIcons2)
+
 
 function ProjectItem(props) {
-  const { title, description, techIcons, imageName } = props;
+  const { title, description, techIcons , onClick, } = props;
+  const sentence = description.split('. ');
 
   return (
     <div className="file" >
       
-      <img src=".././temp.jpg" className={`file_img`} ></img> 
+      <img alt='' src="https://via.placeholder.com/500" className={`file_img`} ></img> 
+    
       <div className="item_text">
-        <p className="file_name">{title}</p>
-        <p className="file_desc">{description}</p>
+        <p className="file_name" onClick={onClick} >{title}</p>
+        
+        {sentence.map((sentence, index) => (
+           <p className="file_desc" key={index}>{sentence}</p>
+         
+      ))}
         <div className="temp">
           { 
           techIcons.map((iconName, index) => {

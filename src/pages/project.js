@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../module/navbar"
 import { Link } from 'react-router-dom';
 import ProjectItem from '../module/ProjectItem';
@@ -38,37 +38,61 @@ export default function Project() {
     const [show_webapps, set_web] = useState(true)
     const [show_3D, set_3D] = useState(true)
     const [show_gserver, set_gserver] = useState(true)
-    const [isHovered, setIsHovered] = useState(false);
+    const [IsDetail, setIsDetail] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 700);
+
+    useEffect(() => {
+        function handleResize() {
+            setIsSmallScreen(window.innerWidth <= 700);
+            
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const handleDetailClick = () => {
+        setIsDetail(!IsDetail);
+        console.log("clicked")
+        console.log(IsDetail)
+        
+      };
 
     return (
         <>
-            <div className="nav_color">
+            {/* <div className="nav_color">
                 <Navbar />
             </div>
             <p className="proj_title">
                 <Link to="/" className='back_but'>⬅</Link>
                 Projects
-            </p>   
+            </p>    */}
             {/* webapps */}
             <div className="parent_container">
-                <div className={`child_left ${isHovered ? 'after' : ''}`}>
-                            
-                                {
-                                    projectData.map((project, index) => (
-                                        <ProjectItem
-                                            key={index}
-                                            title={project.title}
-                                            description={project.description}
-                                            techIcons={project.techIcons}
-                                            imageName={project.imageName}
-                                        />
-                                    ))
-                                }
-                                 
-                </div>
-                <div className="child_right" onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}>
+                <div className={`child_left ${IsDetail ? 'after' : ''}`}>
 
+                    {
+                        projectData.map((project, index) => (
+                            <ProjectItem
+                                key={index}
+                                title={project.title}
+                                description={project.description}
+                                techIcons={project.techIcons}
+                                onClick={()=> handleDetailClick()}
+                                
+
+                            />
+                        ))
+                    }
+
+                </div>
+                
+                <div className={`child_right ${IsDetail ? 'after' : ''}`} >
+                       
+                        <input value={"X"} type="button" onClick={handleDetailClick}/> 
                 </div>
             </div>
 

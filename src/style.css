@@ -19,7 +19,7 @@ body{
     text-decoration: none;
 
     margin: 5px 15px;
-    user-select: none;
+    
     transition: 300ms;
 }
 
@@ -29,7 +29,7 @@ body{
 }
 
 .page_cont{
-    user-select: none;
+    
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -39,7 +39,7 @@ body{
 }
 
 .main_name{
-    user-select: none;
+  
     padding: 150px 80px;
     font-size: 50px;
     text-align: left;
@@ -86,7 +86,7 @@ body{
 }
 
 .reach{
-    user-select: none;
+ 
     width: auto;
     height: auto;
     padding: 20px;
@@ -158,7 +158,7 @@ body{
 }
 
 .proj_cont{
-    user-select: none;
+
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -169,7 +169,7 @@ body{
 }
 
 .proj_title{
-    user-select: none;
+    
     margin: 0px;
     padding: 10px 20px;
 
@@ -250,7 +250,7 @@ body{
     /* background-color: red; */
     background-color: rgb(12, 12, 12);
     height: auto;
-    user-select: none;
+
 }
 
 .threed_cont{
@@ -266,9 +266,10 @@ body{
 }
 
 .file{
-
+    justify-content: center;
     padding: 15px 30px;
     display: flex;
+    flex-wrap: wrap;
     height: auto;
     width: auto;
 }
@@ -287,13 +288,15 @@ body{
 }
 
 .file_desc{
+    
+    text-align: justify;
     margin: 3px;
     color: white;
     padding: 0px 0px;
 }
 
 .item_text{
-    user-select: none;
+    flex: 1 0 300px;
     width: 80%;
     padding: 0px  10px;
 }
@@ -327,206 +330,22 @@ body{
     margin-bottom: 0px;
 }
 
-.file_img_evergreen{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_anibase{
-    width: 160px;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_water{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_smoke{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_transition{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_animation{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_cloth{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_aqd{
-    width: 160px;
-    height: auto;
-    border-radius: 5px;  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_minecraft{
-    width: 160px;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_terraria{
-    width: 160px;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_inspirus6{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_cgrading{
-    width: 160px;
-    background-color: pink;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_rust{
-    width: 160px;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_ark{
-    width: 160px;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
-
-.file_img_pihole{
-    width: 160px;
-    height: auto;
-
-    border-radius: 5px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url(../src/pages/temp.jpg);
-}
 
 .file_img{
     width: 160px;
-    height: auto;
+    height: 110px;
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    object-fit:cover;
 }
 
 .qual_cont{
     background-color: rgb(0, 0, 0);
     display: grid;
     color: white;
-    user-select: none;
+    
 }
 
 .edu_card{
@@ -568,35 +387,46 @@ body{
 .parent_container
 {
     display: flex;
-    flex-direction: row;
 }
 
 .child_left{
     display: flex;
     flex-direction: column;
-
-    width: auto;
+    flex-wrap: wrap;
+    width: 100%;
     background-color: rgb(12, 12, 12);
     height: auto;
-    user-select: none;
     font-size:larger;
     transition: width 0.3s ease;
-}
-/* @media (max-width: 768px) {     .child_left {         display: flex;         flex-direction: column; Stack items vertically     } } */
 
-.child_right{
-  
-  width: auto;
-  height: auto;
-  background-color: aqua;
-  
 }
+.child_right{
+    overflow: hidden;  /* Hide the element content, while height = 0 */
+    height: auto;
+    opacity: 0;
+   
+    width: 0;
+    background-color: aqua;
+    /* transition: width 0.3s ease;
+    height: auto;  */
+  }
+
+ @media only screen and (max-width: 768px) {   .child_left.after{  display: none;  } .child_right.after{ width: 100%;}  } 
+
+
 
 .child_left.after
 {
-    width: 50%;
-    
+       
 }
+.child_right.after
+{
+    opacity: 1;
+    transition: width 100ms 0ms, opacity 400ms 0ms;
+    width: 100%;  
+
+}
+
 
 
 

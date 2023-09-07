@@ -14,6 +14,7 @@ export default function Home()
             <Main/>
             <Qualification/>
             <Course/>
+     
             <Exp/>
             <Software/>
             <Language/>
